@@ -35,6 +35,5 @@ jobs:
       run: |
         ls -al
         cd src
-        python mnist.py
         coverage run --source=. -m pytest
         coverage report -m --fail-under 100
